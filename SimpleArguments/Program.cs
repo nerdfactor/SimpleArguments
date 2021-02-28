@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SimpleArguments {
+namespace eu.nerdfactor.SimpleArguments {
 	/// <summary>
 	/// Example Program that shows how to use a very simple Argument 
 	/// management solution.

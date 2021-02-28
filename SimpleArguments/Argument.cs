@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SimpleArguments {
+namespace eu.nerdfactor.SimpleArguments {
 	/// <summary>
 	/// Simple management for command line arguments.
 	/// Uses static functions to manage a list of Arguments with not the most optimal perfomance. 
@@ -75,6 +75,15 @@ namespace SimpleArguments {
 		/// A command line argument.
 		/// </summary>
 		public Argument() {}
+
+		/// <summary>
+		/// A command line argument.
+		/// </summary>
+		/// <param name="name"></param>
+		/// <param name="action"></param>
+		public Argument(String name, Func<List<Argument>, int> action) : this(name, "", "", "", null, action, false) {
+
+		}
 
 		/// <summary>
 		/// A command line argument.
